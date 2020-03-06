@@ -1,0 +1,664 @@
+/*
+  Theme Name: Traffic_Marketing_Template
+  Author: iTanvir 
+  Support: info@itanvir.net
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Header Area
+3. Off Canvas Menu
+4. Mobile Menu Area
+5. Hero Area
+6. Slider Area
+7. Breadcrumb Area
+8. CTA Area
+9. Analytics Area
+10. About Area
+11. Service Area
+12. Case Study Area
+13. Team Area
+14. Testimonial Area
+15. CTA Area
+16. Pricing Area
+17. Feature Area
+18. Video Area
+19. Accordion Area
+20. Brands Area
+21. Contact Area
+22. Blog Area
+23. Footer Area
+*/
+
+
+/* Theme Default CSS 
+==================================================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Nunito+Sans:300,400,600,700,800,900,900i&display=swap');
+
+   html {
+      scroll-behavior: smooth;
+   }
+
+   body {
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      font-style: normal;
+   }
+   .img {
+      max-width: 100%;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+   }
+   .f-left {
+      float: left;
+      margin-right: 15px;
+   }
+   .f-right {
+      float: right;
+      margin-left: 15px;
+   }
+   .fix {
+      overflow: hidden
+   }
+   .aligncenter {
+      display: block;
+      margin: 0 auto 15px;
+   }
+   a,
+   .button {
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+   }
+
+   a:hover,
+   .main-menu li a:hover,
+   .footer-menu li a:hover {
+      color: #10c9c3;
+      text-decoration: none;
+   }
+   a,
+   button {
+      color: #bcbcbc;
+      outline: medium none;
+   }
+   .uppercase {
+      text-transform: uppercase;
+   }
+   .capitalize {
+      text-transform: capitalize;
+   }
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: #1d1d1d;
+      margin: 0 0 15px;
+      font-style: normal;
+      text-transform: capitalize;
+   }
+   h1 a,
+   h2 a,
+   h3 a,
+   h4 a,
+   h5 a,
+   h6 a {
+      color: inherit;
+   }
+   h1 {
+      font-size: 40px;
+      font-weight: 500;
+   }
+   h2 {
+      font-size: 35px;
+   }
+   h3 {
+      font-size: 28px;
+   }
+   h4 {
+      font-size: 22px;
+   }
+   h5 {
+      font-size: 18px;
+   }
+   h6 {
+      font-size: 16px;
+   }
+   ul {
+      margin: 0px;
+      padding: 0px;
+   }
+   li {
+      list-style: none
+   }
+   p {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 24px;
+      color: #787878;
+      margin-bottom: 15px;
+   }
+   hr {
+      border-bottom: 1px solid #eceff8;
+      border-top: 0 none;
+      margin: 30px 0;
+      padding: 0;
+   }
+   label {
+      color: #787878;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+   }
+   *::-moz-selection {
+      background: #d6b161;
+      color: #fff;
+      text-shadow: none;
+   }
+   ::-moz-selection {
+      background: #444;
+      color: #fff;
+      text-shadow: none;
+   }
+   ::selection {
+      background: #444;
+      color: #fff;
+      text-shadow: none;
+   }
+   *::-moz-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *::-webkit-input-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *:-ms-input-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *::-ms-input-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *::-webkit-input-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *::-moz-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *:-ms-input-placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   *::placeholder {
+      color: #787878;
+      font-size: 14px;
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+   /* button style */
+
+   .btn {
+      -moz-user-select: none;
+      background: #10c9c3 none repeat scroll 0 0;
+      border: 2px solid #10c9c3;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1;
+      margin-bottom: 0;
+      padding: 15px 30px 13px 30px;
+      text-align: center;
+      text-transform: uppercase;
+      -ms-touch-action: manipulation;
+          touch-action: manipulation;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      vertical-align: middle;
+      white-space: nowrap;
+   }
+   .btn:hover {
+      background: transparent;
+      color: #10c9c3
+   }
+   .btn.btn-base.btn-link {
+      background: transparent none repeat scroll 0 0;
+      border: 0 none;
+      color: #10c9c3;
+      padding: 0;
+      text-decoration: none;
+   }
+   .btn.btn-base.btn-link:hover {
+      color: #10c9c3;
+   }
+   
+   input:focus[type="url"], input:focus[type="text"], input:focus[type="email"], input:focus[type="tel"], input:focus[type="button"], input:focus[type="submit"], button:focus[type="button"], button:focus[role="button"], button:focus, input:focus, a:focus, textarea:focus {
+      outline: none;   
+      text-decoration: none;
+   }
+   .btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 0;
+   }
+
+   /* start owl-carousel */
+   .owl-carousel .owl-nav button {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      color: #9999;
+      margin-top: -20px;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      visibility: hidden;
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   }
+   .owl-carousel .owl-nav button i {
+      font-size: 40px;
+   }
+   .owl-carousel .owl-nav button.owl-next {
+      left: auto;
+      right: 0;
+   }
+   .owl-carousel:hover .owl-nav button {
+      left: 40px;
+      opacity: .5;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+      visibility: visible;
+   }
+   .owl-carousel:hover .owl-nav button.owl-next {
+      right: 40px;
+      left: auto;
+   }
+   .owl-carousel .owl-nav button:hover {
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+
+   .owl-carousel .owl-dots button {
+      width: 12px;
+      height: 12px;
+      background: #9999;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 50%;
+  }
+
+   .owl-carousel .owl-dots button.active {
+      background: #10c9c3;
+   }
+
+   .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin-left: -35px;
+   }
+   /* End Owl-Carousel */
+/* End Default Css */
+
+/* Start Header Area
+==================================================*/
+.main-menu li {
+   display: inline-block;
+   text-transform: uppercase;
+   padding: 10px;
+   margin-left: 10px;
+}
+
+.main-menu li a {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   font-weight: 500;
+   color: #191919;
+}
+
+.site-logo {margin-top: 8px;}
+
+.header-area {
+   padding: 10px 0;
+}
+.absolute-header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: auto;
+   z-index: 99;
+}
+
+.sticky {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   background: #9999;
+   z-index: 999;
+}
+.main-menu li.active a {
+   color: #10c9c3;
+}
+/* End Header Area */
+/* Start Slider Area
+==================================================*/
+.slide-bg-1 {background: linear-gradient(rgba(232, 232, 232, 0.8), rgba(233, 233, 233, 0.8)), url(../img/slide1.jpg);}
+.slide-bg-2 {background: linear-gradient(rgba(232, 232, 232, 0.8), rgba(233, 233, 233, 0.8)), url(../img/slide2.jpg);}
+.slide-bg-3 {background: linear-gradient(rgba(232, 232, 232, 0.8), rgba(233, 233, 233, 0.8)), url(../img/slide3.jpg);}
+
+
+.single-slide {
+   background-size: cover;
+   background-position: center top;
+   background-color: #ddd;
+   min-height: 600px;
+   position: relative;
+   z-index: 1;
+   display: table;
+   width: 100%;
+}
+
+.single-slide-wrapper {
+   display: table-cell;
+   vertical-align: middle;
+   padding-top: 70px;
+}
+.single-slide-wrapper h1 {
+   font-size: 38px;
+   margin-bottom: 20px;
+}
+
+.single-slide-wrapper p {
+   font-size: 18px;
+   margin-bottom: 25px;
+}
+/* End Slider Area */
+/* Start About Area
+==================================================*/
+.section-title h3 {
+   font-size: 30px;
+}
+
+.about-area .signature {
+   display: inline-block;
+   margin-top: 20px;
+}
+/* End About Area */
+/* Start Skill Area
+==================================================*/
+.single-bar-item h6 {
+   font-size: 12px;
+   text-transform: uppercase;
+   font-family: Montserrat;
+   font-weight: 600;
+   color: #000000;
+}
+
+.single-bar-item .barfiller {
+   height: 5px;
+   border: none;
+   box-shadow: 0 0 0 0;
+   background: #d8d8d8;
+   margin-bottom: 40px;
+}
+.barfiller .tip {
+   display: none;
+}
+.skill-area {
+   position: relative;
+}
+
+.skill-area:after {
+   height: 100%;
+   width: 48%;
+   position: absolute;
+   right: 0;
+   content: "";
+   top: 0;
+   box-shadow: 0 0 10px #ddd;
+}
+.skill-area:after {
+   background-image: url(../img/skill-bg.jpg);
+}
+/* End Skill Area */
+/* Start Counter Area
+==================================================*/
+.counter-icon i {
+   color: #fff;
+   font-size: 48px;
+}
+
+.counter-content span {
+   font-size: 18px;
+   font-family: Montserrat;
+   font-weight: 500;
+   color: #fff;
+}
+
+.counter-content h6 {
+   font-size: 12px;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: 10px;
+   margin-bottom: 0;
+}
+.counter-icon {
+   padding-right: 20px;
+}
+/* End Counter Area */
+/* Start Project Area
+==================================================*/
+.project-img img {
+   width: 100%;
+}
+.project-img {
+   position: relative;
+}
+
+.project-img:after {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   content: "";
+   background: #000;
+   z-index: 1;
+   opacity: 0;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   -webkit-transform: scale(.5);
+           transform: scale(.5);
+   -webkit-transition: all .4s ease-in-out 0s;
+   transition: all .4s ease-in-out 0s;
+   visibility: hidden;
+}
+
+.project-img:hover:after {
+   visibility: visible;
+   opacity: .7;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+   -webkit-transform: scale(1);
+           transform: scale(1);
+}
+
+.project-img i {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+           transform: translate(-50%, -50%);
+   z-index: 2;
+   padding: 5px;
+   color: #fff;
+   opacity: 0;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   visibility: hidden;
+   -webkit-transition: .5s;
+   transition: .5s;
+}
+
+.project-img:hover i {
+   visibility: visible;
+   opacity: 1;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   font-size: 35px;
+}
+/* End Project Area */
+/* Start Video Area
+==================================================*/
+.video-area-bg {
+   background-image: url(../img/video-bg.jpg);
+}
+.video-area-bg {padding: 240px 0;text-align: center;position: relative;}
+
+.video-area-bg a {
+    width: 50px;
+    height: 50px;
+    background: #10c9c3;
+    color: #fff;
+    font-size: 25px;
+    line-height: 55px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.video-area-bg i {
+    margin-left: 5px;
+}
+/* End Video Area */
+/* Start Service Area
+==================================================*/
+.service-icon i {
+   font-size: 48px;
+   margin-bottom: 20px;
+}
+
+.service-content h6 {
+   font-size: 12px;
+   text-transform: uppercase;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+.service-content p {
+   margin: 0;
+}
+
+.single-service-item {
+   padding: 20px 10px;
+   margin-bottom: 20px;
+   border: 1px solid transparent;
+   -webkit-transition: .3s;
+   transition: .3s;
+}
+
+.single-service-item:hover {
+   border: 1px solid #dddd;
+   cursor: pointer;
+   box-shadow: 0 0 5px #9999;
+}
+/* End Service Area */
+/* Start Testimonial Area
+==================================================*/
+.single-testimonial-item h4 {font-size: 24px;font-family: 'Montserrat', sans-serif;color: #fff;font-weight: 500;line-height: 30px;}
+
+.single-testimonial-item h6 {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+.testimonial-carousel.owl-carousel .owl-dots button {
+   background: #fff;
+   opacity: .5;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.testimonial-carousel.owl-carousel .owl-dots button.active {
+   opacity: 1;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.testimonial-carousel.owl-carousel .owl-dots {
+   bottom: 50px;
+}
+/* End Testimonial Area */
+/* Start Brand Area
+==================================================*/
+.brand-carousel.owl-carousel .owl-item img {
+   width: inherit;
+}
+.single-brand-item {
+   text-align: center;
+}
+
+.single-brand-item a {
+   display: inline-block;
+}
+/* End Brand Area */
+/* Start Contact Area
+==================================================*/
+.contact-forms input[type=text], .contact-forms input[type=email], .contact-forms textarea {
+   width: 100%;
+   border: none;
+   padding: 15px 20px;
+   margin-bottom: 30px;
+}
+
+.contact-forms textarea {
+   resize: none;
+}
+/* End Contact Area */
+/* Start Footer Area
+==================================================*/
+.footer-widget h5 {
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.footer-widget p {
+   color: #bcbcbc;
+   font-size: 15px;
+}
+
+.footer-widget a {
+   margin-bottom: 15px;
+   display: block;
+   font-size: 15px;
+}
+
+.footer-menu li, .social-links li {
+   margin-bottom: 15px;
+   font-size: 15px;
+}
+/* End Footer Area */

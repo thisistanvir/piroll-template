@@ -1,0 +1,92 @@
+/* Normal desktop :1200px. */
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+   .counter-area .col-md-6 {
+      margin-bottom: 30px;
+   }
+   .counter-area .col-md-6:nth-child(3), .counter-area .col-md-6:nth-child(4) {
+      margin-bottom: 0;
+  }
+  
+  .skill-area::after {
+      display: none;
+  }
+  .footer-menu, .social-links {
+   margin-top: 30px;
+}
+
+}
+
+ 
+/* small mobile :320px. */
+@media only screen and (max-width: 767px) {
+   .single-slide {
+      min-height: 500px;
+  }
+  .single-slide-wrapper h1 {
+   font-size: 38px;
+   margin-bottom: 20px;
+}
+.skill-area::after {
+   display: none;
+}
+.skill-area {
+   padding: 60px 0;
+   margin-bottom: 50px;
+}
+.single-counter-item {
+   margin-bottom: 30px;
+}
+
+.counter-area {
+   padding: 50px 0;
+}
+.video-area {
+   padding: 50px 0;
+}
+
+.section-title h3 {
+   font-size: 25px;
+}
+.video-area-bg {
+   padding: 140px 0;
+}
+.single-testimonial-item h4 {
+   font-size: 16px;
+}
+.testimonial-carousel {
+   padding: 100px 0;
+}
+.contact-area {
+   padding: 50px 0;
+}
+
+.footer-area {
+   padding: 50px 0;
+}
+
+.footer-area .col-md-6, .footer-area .col-lg-2 {
+   margin-bottom: 20px;
+}
+  
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
